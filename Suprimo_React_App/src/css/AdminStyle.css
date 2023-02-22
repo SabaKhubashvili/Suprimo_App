@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+w
+.warning{
+    color: #FFBB55 !important;
+}
+.primary{
+    color: #7380EC !important;
+}
+.full-container{
+    padding-left: 20px;
+    display: grid;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+.adminPage-container{
+    padding-left: 20px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto;
+}
+.logoContainer{
+    color: #7380EC;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.navbar.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 !important;
+}
+
+.navbar.navbar  .nav_component{
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: #7d8da1;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar.navbar a{
+    text-decoration: none;
+}
+.navbar.navbar  .nav_component.active{
+    color: #7380EC;
+    border-left: 10px solid #7380EC;
+}
+.navbar.navbar > .nav_component:hover{
+    margin-left: 20px !important;
+    color: #7380EC;
+}
+
+.navbar.navbar_hidden{
+    display: none;
+}
+
+.mainContent h1{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+}
+.date{
+    background-color: #E2E3F0;
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 10px;
+    color: #51546B;
+}
+.insight_logo{
+    background-color: #7380EC;
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 50px;
+}
+.insights{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6rem;
+}
+.insight{
+    background: #FFF;
+    padding: 1.8rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    box-shadow:0 2rem 3rem #dad5d5 ;
+    transition: all 0.3s ease;
+}
+.insight:hover{
+    box-shadow: none;
+}
+.insight_money_info {
+    font-family: 'Poppins',sans-serif;
+}
+.insight_money_info h6{
+    font-weight: 700;
+    font-size: 19px;
+}
+.insight_money_info .money{
+    font-size: 35px;
+    font-weight: 800;
+}
+.insight_info{
+    display: flex;
+    justify-content: space-between;
+}
+.time{
+    color: #7D8DA1;
+}
+.recentOrders_table{
+    border-radius: 20px;
+    background-color: #FFF;
+    font-family: 'Poppins',sans-serif;
+}
+.recentOrders_table tbody tr td{
+    padding: 15px 0;
+    border-bottom:1px solid #E9EAF5 ;
+    color:  #677483 ;
+    font-size: 18px;
+}
+.recentOrders_table thead tr th{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.update{
+    padding: 10px 40px;
+    border-bottom: 1px solid #E9EAF5;
+}
+.info{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+}
+.info .name{
+    font-weight: 800;
+    margin-right: 20px;
+}
+.analytic{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.analytic .precentage{
+    color: #48e3af;
+
+}
+.analytic .number{
+    font-weight: 700;
+}
+.analytic .img_container{
+    background-color: #7380EC;
+    border-radius: 50px;
+
+}
+.analytic_info_name{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    color: #7380EC;
+    font-size: 25px;
+}
+@media (max-width:1440px){
+    .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .insight{
+        margin: 20px 0;
+    }
+    .logoContainer{
+        font-size: 15px;
+    }
+    .full-container{
+        grid-template-columns: 7rem auto 23rem;
+    }
+    .recentOrders_table{
+        position: absolute;
+    }
+    
+    .adminNavigation_names{
+        display: none !important;
+    }
+    .productName,.productStatus,.customerPhone,.customerEmail{
+        display: none;
+    }
+    .recentOrders_table{
+        width: 80% !important;
+    }
+}
+@media (max-width:900px){
+
+    aside{
+        transform: translateX(-600px);
+        position: absolute;
+    }
+    .full-container{
+        grid-template-columns: 1fr;
+    }
+    .adminPage-container{
+        grid-template-columns: 1fr;
+    }
+    .recentOrders{
+        margin-right: 0 !important;
+    }
+    .recentOrders_table thead tr th {
+        padding: 20px 20px;
+    }
+    .recentOrders_table{
+        position: relative;
+        width: 100% !important;
+        z-index: -1;
+    }
+    .mobile_navigation{
+        display: inline !important;
+    }
+    .navbar_shown{
+        position: absolute;
+        transform: translateX(0px);
+        background-color: #FFF;
+        width: 100%;
+        padding: 20px 0;
+        top: 80px;
+    }
+    .navbar_shown .adminNavigation_names {
+        display: inline !important;
+    }
+    .analytic_container{
+        position: absolute;
+        z-index: -1;
+    }
+}
