@@ -16,7 +16,7 @@ import topBannerImage from '../assets/Images/Banner/topBanner.avif'
 import NavbarComp from "../Common/NavbarComp"
 import Bottom from "../Common/Footer/Bottom"
 
-import MetadataImage from '../assets/Images/Blog/BlogPost_1_adds'
+import MetadataImage from '../assets/Images/Blog/BlogPost_1_adds.jpg'
 
 export default function Home(){
     React.useEffect(()=>{
