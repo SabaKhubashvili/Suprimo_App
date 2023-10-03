@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
@@ -15,6 +16,8 @@ import topBannerImage from '../assets/Images/Banner/topBanner.avif'
 import NavbarComp from "../Common/NavbarComp"
 import Bottom from "../Common/Footer/Bottom"
 
+import MetadataImage from '../assets/Images/Blog/BlogPost_1_adds'
+
 export default function Home(){
     React.useEffect(()=>{
         window.scroll(0,0)        
@@ -25,6 +28,16 @@ export default function Home(){
 
     return(
         <React.Fragment>
+           <Helmet>
+                    <title>Suprimo Gym</title>
+                    <meta name="description" content="Discover a healthier you at our state-of-the-art fitness center. Achieve your fitness goals with expert trainers, modern equipment, and diverse workout programs. Join us today and start your journey to a fitter, stronger, and happier you!" />
+                    <meta property="og:title" content="Suprimo" />
+                    <meta property="og:image" content={MetadataImage} />
+                    <meta property="og:url" content={'https://suprimo.netlify.app'} />
+
+                    <meta name="twitter:title" content="Suprimo" />
+                    <meta name="twitter:image" content={MetadataImage} />
+                </Helmet>
             <NavbarComp/>
             
             <TopBanner  

@@ -8,11 +8,7 @@ export default function(){
     return(
         <React.Fragment>
             <BrowserRouter>
-              
-                
-                <Router />
-
-         
+                <Router />    
             </BrowserRouter>
         </React.Fragment>
     )
