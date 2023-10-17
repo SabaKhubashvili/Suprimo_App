@@ -25,7 +25,7 @@ export default function NavbarComp(props){
 
     return(
       <React.Fragment>
-              <Navbar bg='' fixed="top" className={isScrolled == true ? 'Navbar_scrolled py-3' : 'Navbar_transparent py-2'}   expand="lg" >
+              <Navbar bg='' fixed="top" className={isScrolled == true ? 'Navbar_scrolled py-3' : 'Navbar_transparent py-2'}   style={{padding:'10px 0'}} expand="lg" >
                 <Container className="navbar_container">
                   <Link to="/"><Navbar.Brand className="nav_logo">Suprimo</Navbar.Brand></Link>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
