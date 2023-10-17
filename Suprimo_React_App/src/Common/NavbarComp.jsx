@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 import {Container,Navbar,NavDropdown,Nav,NavLink} from 'react-bootstrap'
-import HamburgerSVG from '../assets/SVG/Hamburger.svg'
+
 import Arrow from '../assets/SVG/Arrow.svg'
 
 export default function NavbarComp(props){
@@ -25,7 +25,8 @@ export default function NavbarComp(props){
 
     return(
       <React.Fragment>
-              <Navbar bg='' fixed="top" className={isScrolled == true ? 'Navbar_scrolled py-3' : 'Navbar_transparent py-2'}   style={{padding:'10px 0'}} expand="lg" >
+              <Navbar bg='' fixed="top" className={isScrolled == true ? 'Navbar_scrolled py-3' : 'Navbar_transparent py-2 '}  
+               expand="lg" >
                 <Container className="navbar_container">
                   <Link to="/"><Navbar.Brand className="nav_logo">Suprimo</Navbar.Brand></Link>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -48,7 +48,7 @@ export default function AdminNavigation({active}){
                 </div>
 
 
-            <div className="navbar  my-5"  >
+            <div className="admin_navbar my-5"  >
 
                 <Link to='/admin'>
                 <div className={active == 'home' ? 'nav_component active' : 'nav_component'} >

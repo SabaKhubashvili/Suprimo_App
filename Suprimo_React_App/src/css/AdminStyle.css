@@ -32,7 +32,7 @@ w
     font-size: 30px;
     margin-left: 30px;
 }
-.navbar.navbar{
+.admin_navbar.navbar{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -40,7 +40,7 @@ w
     padding: 0 !important;
 }
 
-.navbar.navbar  .nav_component{
+.admin_navbar.navbar  .nav_component{
     margin: 10px 0;
     padding: 10px 20px;
     color: #7d8da1;
@@ -51,19 +51,19 @@ w
     cursor: pointer;
     text-decoration: none;
 }
-.navbar.navbar a{
+.admin_navbar.navbar a{
     text-decoration: none;
 }
-.navbar.navbar  .nav_component.active{
+.admin_navbar.navbar  .nav_component.active{
     color: #7380EC;
     border-left: 10px solid #7380EC;
 }
-.navbar.navbar > .nav_component:hover{
+.admin_navbar.navbar > .nav_component:hover{
     margin-left: 20px !important;
     color: #7380EC;
 }
 
-.navbar.navbar_hidden{
+.admin_navbar.navbar_hidden{
     display: none;
 }
 
